@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  devise_for :users
   resources :urls, only: [:new, :create]
   resources :profiles
 
