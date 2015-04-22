@@ -23,6 +23,10 @@
  <p class="alert"><%= alert %></p>
 
 	<%= yield %>
+<br><br><br><br><br>
+	<%= link_to "Sign out", destroy_user_session_path, :method => :delete %><br>
+	<%= link_to "log in", new_user_session_path %><br>
+	<%= link_to "Sign up", new_user_registration_path %>
 
 	<%= render 'layouts/footer' %>
 
